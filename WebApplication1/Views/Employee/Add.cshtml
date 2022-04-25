@@ -1,0 +1,18 @@
+﻿@model WebApplication1.EmployeeAddViewModel;
+
+<!DOCTYPE html>
+<form asp-controller="Employee" asp-action="Add">
+    id:<input asp-for="Employee.Id" /><br />
+    FirstName <input asp-for="Employee.FirstName" /><br />
+    LastName<input asp-for="Employee.LastName" /><br>
+    City<select asp-for="Employee.CityId" asp-items="Model.Cities"></select><br />
+    <button type="submit">gonder</button>
+</form>
+<br />
+<br />
+<br />
+<employee-list count="5"></employee-list>
+@section MySection{ 
+
+some content
+}

@@ -1,0 +1,21 @@
+﻿@model WebApplication1.Models.Security.RegisterViewModel
+@{
+    Layout = null;
+
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <form asp-controller="security" asp-action="register" method="post">
+        
+        <input type="text" asp-for="UserName" placeholder="isim giriniz" />
+        <input type="email" asp-for="Email" placeholder="email giriniz" />
+        <input type="password" asp-for="Password" placeholder="sifre girin" />
+        <input type="password" asp-for="ConfirmedPassword" placeholder="sifre tekrar girin" />
+        <input type="text" asp-for="Age" placeholder="yasinizi girin" />
+        <input type="submit" value="register" />
+    </form>
+</body>
+</html>

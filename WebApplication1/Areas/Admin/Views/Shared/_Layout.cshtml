@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+
+    <div>
+        @RenderBody()
+    </div>
+    <div>Menu</div>
+    <div>
+        @await Component.InvokeAsync("StudentList",new {filter="ali can"})
+
+    </div>
+    <div>@RenderSection("MySection", false)</div>
+    <div>footer</div>
+
+</body>
+</html>

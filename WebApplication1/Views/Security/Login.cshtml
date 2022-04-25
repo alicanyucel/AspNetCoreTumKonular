@@ -1,0 +1,19 @@
+﻿@model WebApplication1.Models.Security.LoginViewModel
+@{
+
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h3>LOGİN</h3>
+    <div asp-validation-summary="All"></div>
+    <form  asp-controller="security" asp-action="login" method="post">
+        <input type="text"  asp-for="UserName" placeholder="user nama"/><br />
+        <input type="password" asp-for="PassWord" placeholder="parola" /><br />
+        <input type="submit" value="login" />
+    </form>
+    </body>
+</html>
